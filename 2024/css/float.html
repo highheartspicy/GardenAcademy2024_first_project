@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout: Float</title>
+    <style>
+      .container {
+        width: 100%;
+        min-height: 20px;
+        height: auto;
+        background-color: #8a83d3;
+      }
+      .container::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      div {
+        width: 120px;
+        height: 60px;
+        margin: 10px;
+      }
+      .item_1 {
+        background-color: darkslateblue;
+        float: left;
+      }
+      .item_2 {
+        background-color: brown;
+        float: left;
+      }
+      .item_3 {
+        background-color: tomato;
+        float: left;
+      }
+      .item_4 {
+        background-color: blue;
+        float: left;
+      }
+      .item_5 {
+        background-color: green;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="item_1">This div 1</div>
+      <div class="item_2">This is div 2</div>
+      <div class="item_3">This div 3</div>
+      <div class="item_4">This div 4</div>
+      <div class="item_5">This is div 5</div>
+    </section>
+  </body>
+</html>

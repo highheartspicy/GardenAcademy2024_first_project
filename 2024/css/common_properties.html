@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: rgb(255, 255, 255);
+        background-color: blue;
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        text-decoration: underline;
+      }
+
+      div {
+        margin-left: 20px;
+        margin-right: 13px;
+        margin-bottom: 16px;
+        margin-top: 16px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 4px;
+        padding-top: 8px;
+        border-width: 2px;
+        border-color: black;
+        border-style: dashed;
+      }
+
+      section {
+        margin: 20px 16px 13px 16px; /* left top right bottom */
+        padding: 20px 13px 4px 8px; /* left top right bottom */
+        border: 2px solid black;
+      }
+
+      aside {
+        margin: 30px 20px;
+        padding: 10px 13px;
+        border: 2px dotted red;
+      }
+
+      main {
+        margin: 10px;
+        padding: 12px;
+        border: 2px groove green;
+      }
+
+      .div_1 {
+        /* margin-left: unset;
+        margin-right: unset;
+        margin-bottom: unset;
+        margin-top: unset;
+        padding-left: unset;
+        padding-right: unset;
+        padding-bottom: unset;
+        padding-top: unset;
+        border-width: unset;
+        border-color: unset;
+        border-style: unset; */
+
+        position: relative;
+      }
+
+      .div_2,
+      .div_3a {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        background-color: black;
+        color: white;
+      }
+
+      .div_3 {
+        position: relative;
+        height: 150px;
+        width: 200px;
+      }
+
+      .div_4 {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        width: 100px;
+        height: 120px;
+        background-color: green;
+        z-index: 2;
+      }
+
+      body {
+        height: 1000px;
+      }
+
+      .sticky {
+        position: sticky;
+        top: 0;
+        background-color: red;
+        padding: 20px;
+        text-align: center;
+        z-index: 9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sticky">This is a sticky div</div>
+    <p>This are the common properties for css</p>
+    <div>This is a div</div>
+    <section>This is a section</section>
+    <aside>This is an aside</aside>
+    <main>This is a main</main>
+
+    <div class="div_1">This is div 1</div>
+    <div class="div_2">This is div 2</div>
+
+    <div class="div_3">
+      This is div 3
+      <div class="div_3a">This is div 3a</div>
+    </div>
+
+    <div class="div_4">This is div 4</div>
+  </body>
+</html>

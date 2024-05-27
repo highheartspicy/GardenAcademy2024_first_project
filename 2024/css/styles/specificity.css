@@ -1,0 +1,25 @@
+#p1 {
+  color: green;
+}
+
+.p1 {
+  color: blue !important;
+}
+
+p {
+  color: pink;
+}
+
+[type="text"] {
+  border: 2px solid red;
+  background-color: green;
+}
+
+.input_form {
+  border: 2px solid black;
+  background-color: unset;
+}
+
+body {
+  background-color: red;
+}

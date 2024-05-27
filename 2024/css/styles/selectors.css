@@ -1,0 +1,60 @@
+/* Universal selector */
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* element selector */
+body {
+  background-color: #f1f1f1;
+}
+
+p {
+  font-weight: bold;
+}
+
+a {
+  cursor: pointer;
+  margin: 20px;
+}
+
+/* class selector */
+.special_paragraph {
+  color: red;
+  margin: 20px;
+}
+
+/* id selector */
+#paragraph_5 {
+  font-size: 3em;
+}
+
+/* attribute selector */
+[type="text"] {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+[name="title"] {
+  border: 2px solid red;
+  margin: 10px;
+}
+
+/* pseudo-class selector */
+a:hover {
+  color: orange;
+}
+
+a:active {
+  color: green;
+}
+
+a:visited {
+  color: red;
+}
+
+/* pseudo-element selector */
+p::first-letter {
+  color: green;
+}
